@@ -1,0 +1,15 @@
+.input {
+  background-color: #666 !important;
+  border-color: #555 !important;
+  color: #fff !important;
+}
+
+.login-page {
+  width: 600px;
+  margin: 50px auto;
+}
+
+.login-page h1 {
+  text-align: center;
+}
+
