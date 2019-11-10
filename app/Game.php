@@ -3,7 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Eloquent;
 
+/**
+ * Game
+ *
+ * @mixin Eloquent
+ */
 class Game extends Model
 {
     /**

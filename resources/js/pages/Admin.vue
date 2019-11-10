@@ -1,6 +1,14 @@
+<script>
+export default {
+  name: 'AdminPage'
+}
+</script>
+
 <template>
   <div class="admin">
-    <h3 class="title is-3 welcome-text">Administration</h3>
+    <h3 class="title is-3 welcome-text">
+      Administration
+    </h3>
     <div class="columns">
       <div class="column is-narrow">
         <div class="box side-menu">
@@ -33,18 +41,14 @@
 
       <div class="column">
         <div class="box">
-          <h4 class="title is-4">User Management</h4>
+          <h4 class="title is-4">
+            User Management
+          </h4>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'admin'
-}
-</script>
 
 <style lang="scss" scoped>
 .admin {

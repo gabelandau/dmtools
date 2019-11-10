@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Game;
 
@@ -21,7 +20,7 @@ class GamesController extends Controller
     /**
      * Return games by user ID.
      *
-     * @return App\Game;
+     * @return Collection
      */
     public function listGamesByUser()
     {
@@ -30,5 +29,18 @@ class GamesController extends Controller
             ->get();
 
         return $games;
+    }
+
+    /**
+     * Return single game by game ID
+     *
+     * @param $id
+     * @return Game
+     */
+    public function getById($id) {
+        $game = Game::where('id', $id)
+            ->first();
+
+        return $game;
     }
 }

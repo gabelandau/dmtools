@@ -15,4 +15,5 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'v1', 'middleware' => 'auth:api'], function() {
     Route::get('games/mine', 'GamesController@listGamesByUser');
+    Route::get('game/{id}', 'GamesController@getById');
 });
